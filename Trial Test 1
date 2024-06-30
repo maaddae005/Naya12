@@ -1,0 +1,10 @@
+secret_number= 36
+user_input =int(input("Guess the 'secret_number' (between 1 and 100): " ))
+if user_input > secret_number :
+    print("Too high!Try again.")
+elif user_input < secret_number :
+    print("Too Low!Try again.")
+elif user_input == secret_number:
+    print("Congratulations!You guessed the number!")
+else:
+     print("Try again later.")
