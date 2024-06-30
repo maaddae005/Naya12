@@ -1,0 +1,9 @@
+import math
+n = int (input ('Enter a number: ' ))
+sum = (n + (n +1) + (n + 2) + (n + 4) + (n + 6) + (n + 8))
+mean = sum / 5
+Square_Sum = (((n-mean)**2) + ((n + 1 - mean)**2) + ((n + 2 - mean)**2) + ((n + 4 - mean)**2) + ((n + 6 - mean)**2) + ((n + 8 - mean)**2))
+Variance = Square_Sum / 5
+Standard_Deviation = math.sqrt(Variance)
+print(float(Variance))
+print(float(Standard_Deviation))
