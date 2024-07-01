@@ -1,0 +1,17 @@
+secret_number= 36
+maximum_attempts= 4
+minimum_attempts=0
+while True:
+ user_input =int(input("Guess the 'secret_number' (between 1 and 100): " )) 
+ minimum_attempts += 1
+ if user_input > secret_number :
+    print("Too high!Try again.")
+ elif user_input < secret_number :
+    print("Too Low!Try again.")
+ elif user_input == secret_number:
+    print("Congratulations!You guessed the number!")
+    print("Exist...")
+    break
+ if minimum_attempts==maximum_attempts:
+    print("You have reached the maximum number of attempts!Try again later.")
+    break
